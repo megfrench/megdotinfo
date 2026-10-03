@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Megan French - Business Administration Student, Press Operator, and Federal Contractor.">
+    <title>Megan French | Business Admin & Contracting</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        navy: '#003366',
+                        govblue: '#005ea2'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .fade-in { animation: fadeIn 1s ease-in forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <nav class="fixed w-full z-50 glass-nav border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-navy tracking-tight">meganfrench<span class="text-primary-600">.info</span></a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">About</a>
+                    <a href="#capabilities" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Capabilities</a>
+                    <a href="#blog" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Field Notes</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Feedback</a>
+                    <a href="#contact" class="bg-navy hover:bg-govblue text-white px-5 py-2.5 rounded-lg font-medium transition-colors shadow-sm">Get in Touch</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-navy focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">About</a>
+                <a href="#capabilities" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">Capabilities</a>
+                <a href="#blog" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">Field Notes</a>
+                <a href="#testimonials" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">Feedback</a>
+                <a href="#contact" class="block px-3 py-2 text-navy font-bold hover:bg-gray-50 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden relative">
+        <div class="absolute top-0 right-0 -z-10 translate-x-1/3 -translate-y-1/4">
+            <div class="w-[600px] h-[600px] bg-primary-50 rounded-full blur-3xl opacity-50"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 -z-10 -translate-x-1/3 translate-y-1/4">
+            <div class="w-[400px] h-[400px] bg-blue-50 rounded-full blur-3xl opacity-50"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                
+                <div class="lg:col-span-6 text-center lg:text-left fade-in">
+                    <div class="inline-flex items-center px-3 py-1.5 rounded-full bg-blue-100 text-govblue font-semibold text-sm mb-6 border border-blue-200">
+                        <span class="flex h-2 w-2 bg-govblue rounded-full mr-2"></span>
+                        CAGE Coded Entity: 180J1
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy tracking-tight leading-tight mb-6">
+                        Bridging the <span class="text-primary-600">Factory Floor</span> and Federal Procurement.
+                    </h1>
+                    <!-- Short Bio Section -->
+                    <div id="about" class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed space-y-4">
+                        <p>
+                            Hello, I'm <strong>Megan French</strong>. I am an Operations and Systems Specialist, Business Administration student (4.0 GPA, Presidential List) at University of the People, and an active manufacturing press operator in Southern Ohio.
+                        </p>
+                        <p>
+                            My professional journey merges hands-on industrial workflows with digital systems analysis, data optimization, and Federal Acquisition Regulations (FAR). I maintain this living journal to document my fieldwork, academic studies, and federal contracting insights.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#capabilities" class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3.5 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg text-center">
+                            View Capabilities
+                        </a>
+                        <a href="#blog" class="bg-white hover:bg-gray-50 text-navy border border-gray-300 px-8 py-3.5 rounded-lg font-semibold transition-all shadow-sm text-center">
+                            <i class="fas fa-book-open mr-2"></i> Read Field Notes
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 mt-16 lg:mt-0 relative hidden md:block">
+                    <div class="relative rounded-2xl bg-gray-900 shadow-2xl border border-gray-700 h-[400px] flex flex-col overflow-hidden">
+                        
+                        <!-- Terminal Header -->
+                        <div class="flex items-center justify-between px-4 py-3 bg-gray-800 border-b border-gray-700 select-none">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500 hover:bg-red-400 transition-colors cursor-pointer"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500 hover:bg-yellow-400 transition-colors cursor-pointer"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500 hover:bg-green-400 transition-colors cursor-pointer"></div>
+                            </div>
+                            <div class="text-xs text-gray-400 font-mono">user@meganfrench.info: ~</div>
+                            <div class="w-10"></div>
+                        </div>
+
+                        <!-- Terminal Content -->
+                        <div class="p-4 flex-grow overflow-y-auto font-mono text-sm leading-relaxed text-gray-300" id="terminal-body" onclick="document.getElementById('terminal-input').focus()" style="cursor: text; scrollbar-width: thin; scrollbar-color: #4b5563 #111827;">
+                            <div id="terminal-output">
+                                <div class="text-gray-500 mb-2">Last login: <span id="terminal-date">Loading...</span> on console</div>
+                                <div class="mb-4 text-white">Welcome to the Megan French Interactive Terminal. <br>Type <span class="text-yellow-400 font-bold">'help'</span> to see a list of available commands.</div>
+                            </div>
+                            
+                            <div class="flex items-center mt-2">
+                                <span class="text-green-400 mr-2 font-semibold">me@system:~$</span>
+                                <input type="text" id="terminal-input" class="bg-transparent outline-none border-none flex-grow text-white caret-white shadow-none focus:ring-0 p-0" autocomplete="off" spellcheck="false" autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="capabilities" class="py-20 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-4">Core Competencies</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">Bridging physical manufacturing processes with digital systems and strategic logistics.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-industry text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-4">Industrial Operations</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">System monitoring, physical asset lifecycle management, data-driven downtime analysis, continuous improvement tracking, and production throughput optimization.</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-microchip text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-4">Digital Systems Analysis</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">Foundational computer science applications, human-machine interface (UI/UX) transitions, technical R&D support, digital record keeping, and quality data analysis.</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-route text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-4">Strategic Logistics</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">Cost benefit analysis (leveraging LPTA principles), vendor/supplier relations, raw material staging, efficient team coordination, and complex project execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-10 border-b border-gray-200 pb-4">
+                <div>
+                    <h2 class="text-3xl font-bold text-navy mb-2">Field Notes & Dispatches</h2>
+                    <p class="text-gray-600">A living log of my journey through manufacturing, business, and procurement.</p>
+                </div>
+                <a href="#" class="hidden md:inline-flex items-center text-primary-600 font-bold hover:text-primary-700 transition-colors">
+                    View All Archives <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-md transition-all group cursor-pointer flex flex-col">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/003366/ffffff?text=Manufacturing+Logistics" alt="Manufacturing Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-navy shadow-sm">Operations</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <p class="text-xs text-gray-500 font-mono mb-2">Sep 28, 2026 • 5 min read</p>
+                        <h3 class="text-lg font-bold text-navy mb-3 group-hover:text-primary-600 transition-colors">Press Operation: The Art of Efficiency on the Floor</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4 flex-grow">Bridging the gap between macro theory and what actually happens when the injection molding press cycles. Real supply chain starts here.</p>
+                        <span class="text-primary-600 text-sm font-bold inline-flex items-center">Read Article <i class="fas fa-chevron-right ml-1 text-xs"></i></span>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-md transition-all group cursor-pointer flex flex-col">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/0ea5e9/ffffff?text=Federal+Procurement" alt="Procurement Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-navy shadow-sm">Procurement</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <p class="text-xs text-gray-500 font-mono mb-2">Sep 15, 2026 • 8 min read</p>
+                        <h3 class="text-lg font-bold text-navy mb-3 group-hover:text-primary-600 transition-colors">Decoding SAM.gov and the Path to a CAGE Code</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4 flex-grow">Navigating the federal entity registration process, passing validation, and why having a CAGE code matters for a WOSB.</p>
+                        <span class="text-primary-600 text-sm font-bold inline-flex items-center">Read Article <i class="fas fa-chevron-right ml-1 text-xs"></i></span>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-md transition-all group cursor-pointer flex flex-col">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1f2937/ffffff?text=Business+Admin" alt="Business Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-navy shadow-sm">Academics</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <p class="text-xs text-gray-500 font-mono mb-2">Aug 30, 2026 • 4 min read</p>
+                        <h3 class="text-lg font-bold text-navy mb-3 group-hover:text-primary-600 transition-colors">Balancing a 4.0 GPA with 40-Hour Factory Shifts</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4 flex-grow">Time management, LPTA principles applied to daily life, and how computer science foundations streamline academic research.</p>
+                        <span class="text-primary-600 text-sm font-bold inline-flex items-center">Read Article <i class="fas fa-chevron-right ml-1 text-xs"></i></span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-navy relative overflow-hidden" id="testimonials">
+        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#ffffff 1.5px, transparent 1.5px); background-size: 24px 24px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Professional Feedback & Recommendations</h2>
+                <p class="text-blue-200 text-lg max-w-2xl mx-auto">Insights from instructors, colleagues, and network connections on my academic and professional approach.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-gray-800 flex flex-col justify-between transform transition duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="text-primary-500 text-2xl mb-4"><i class="fas fa-quote-left"></i></div>
+                        <p class="text-base text-gray-600 italic mb-6 leading-relaxed">"I highly recommend Megan French for her exceptional ability to bridge the gap between complex technical tools and strategic R&D initiatives. As the CEO of PINK PILLED, Megan demonstrates a proactive and visionary approach to research management."</p>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                        <p class="font-bold text-gray-900 text-sm">Dr. R. Irmak</p>
+                        <p class="text-gray-500 text-xs">PhD, Philosophy</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-gray-800 flex flex-col justify-between transform transition duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="text-primary-500 text-2xl mb-4"><i class="fas fa-quote-left"></i></div>
+                        <p class="text-base text-gray-600 italic mb-6 leading-relaxed">"It is a rare to know someone who is a forward thinker with the ability to problem solve and educate others in diverse concepts. Her skills and knowledge would be an asset to any organization."</p>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                        <p class="font-bold text-gray-900 text-sm">K. Norris</p>
+                        <p class="text-gray-500 text-xs">B.S., Wildlife Biology</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-gray-800 flex flex-col justify-between transform transition duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="text-primary-500 text-2xl mb-4"><i class="fas fa-quote-left"></i></div>
+                        <p class="text-base text-gray-600 italic mb-6 leading-relaxed">"Your (French's) transparent disclosure of using an AI tool for research organization is a commendable and professional practice that enhances the credibility of your original work."</p>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                        <p class="font-bold text-gray-900 text-sm">Dr. Z. Sani</p>
+                        <p class="text-gray-500 text-xs">PhD, Philosophy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-navy mb-4">Official Communications & Inquiries</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">To ensure efficient processing of your request, please provide comprehensive details regarding your organization and the nature of your inquiry.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
+                
+                <div class="bg-navy px-8 py-6 text-white flex flex-col md:flex-row justify-between items-center gap-6 border-b-4 border-primary-500">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-map-marker-alt text-primary-400 text-xl"></i>
+                        <span class="font-medium">Southern Ohio Hub</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-envelope text-primary-400 text-xl"></i>
+                        <a href="mailto:business@meganfrench.info" class="font-medium hover:text-blue-200 transition-colors">business@meganfrench.info</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-building text-primary-400 text-xl"></i>
+                        <span class="font-medium">CAGE: 180J1</span>
+                    </div>
+                </div>
+
+                <div class="p-8 md:p-12">
+                    <form id="contactForm">
+                        
+                        <h3 class="text-lg font-bold text-navy mb-4 border-b border-gray-200 pb-2"><i class="fas fa-user-circle text-primary-500 mr-2"></i>Point of Contact Information</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div>
+                                <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
+                                <input type="text" id="name" name="name" data-fs-field class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-gray-50" placeholder="Jane Doe" required>
+                                <span data-fs-error="name" class="text-red-500 text-xs mt-1 block"></span>
+                            </div>
+                            <div>
+                                <label for="title" class="block text-sm font-bold text-gray-700 mb-2">Job Title / Position <span class="text-red-500">*</span></label>
+                                <input type="text" id="title" name="title" data-fs-field class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-gray-50" placeholder="Contracting Officer" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-bold text-gray-700 mb-2">Official Email Address <span class="text-red-500">*</span></label>
+                                <input type="email" id="email" name="email" data-fs-field class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-gray-50" placeholder="jane.doe@agency.gov" required>
+                                <span data-fs-error="email" class="text-red-500 text-xs mt-1 block"></span>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Direct Phone Number <span class="text-red-500">*</span></label>
+                                <input type="tel" id="phone" name="phone" data-fs-field class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-gray-50" placeholder="(555) 123-4567" required>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-navy mb-4 border-b border-gray-200 pb-2"><i class="fas fa-building text-primary-500 mr-2"></i>Organization Details</h3>
+                        <div class="mb-6 relative">
+                            <label for="org-search" class="block text-sm font-bold text-gray-700 mb-2">Agency or Company Name <span class="text-red-500">*</span></label>
+                            
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-search text-gray-400"></i>
+                                </div>
+                                <input type="text" id="org-search" class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-gray-50 cursor-text" placeholder="Search agencies or firms... (Type to filter)" autocomplete="off" required>
+                                <div class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer" id="org-dropdown-toggle">
+                                    <i class="fas fa-chevron-down text-gray-400"></i>
+                                </div>
+                            </div>
+                            
+                            <div id="org-dropdown-list" class="hidden absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto">
+                            </div>
+                            
+                            <input type="hidden" id="org-value" name="organization" data-fs-field required>
+                        </div>
+
+                        <div id="manual-org-container" class="mb-6 hidden bg-blue-50 p-4 rounded-lg border border-blue-100">
+                            <label for="manual-org" class="block text-sm font-bold text-navy mb-2">Please specify your Agency/Company name <span class="text-red-500">*</span></label>
+                            <input type="text" id="manual-org" name="manual_organization" data-fs-field class="w-full px-4 py-3 rounded border border-gray-300 focus:ring-2 focus:ring-primary-500 outline-none">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 bg-gray-50 p-6 rounded-lg border border-gray-200">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-3">Are you representing a Federal Agency? <span class="text-red-500">*</span></label>
+                                <div class="flex gap-6">
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="is_federal" value="yes" data-fs-field class="w-4 h-4 text-primary-600 border-gray-300 focus:ring-primary-500" required>
+                                        <span class="ml-2 text-gray-700">Yes</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="is_federal" value="no" data-fs-field class="w-4 h-4 text-primary-600 border-gray-300 focus:ring-primary-500">
+                                        <span class="ml-2 text-gray-700">No</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-3">Does your entity have an active CAGE Code? <span class="text-red-500">*</span></label>
+                                <div class="flex gap-6">
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="has_cage" value="yes" data-fs-field class="w-4 h-4 text-primary-600 border-gray-300 focus:ring-primary-500" required>
+                                        <span class="ml-2 text-gray-700">Yes</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="has_cage" value="no" data-fs-field class="w-4 h-4 text-primary-600 border-gray-300 focus:ring-primary-500">
+                                        <span class="ml-2 text-gray-700">No</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="has_cage" value="unsure" data-fs-field class="w-4 h-4 text-primary-600 border-gray-300 focus:ring-primary-500">
+                                        <span class="ml-2 text-gray-700">Unsure</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-navy mb-4 border-b border-gray-200 pb-2"><i class="fas fa-file-contract text-primary-500 mr-2"></i>Nature of Inquiry</h3>
+                        <div class="mb-6">
+                            <label for="inquiry-type" class="block text-sm font-bold text-gray-700 mb-2">Primary Purpose of Contact <span class="text-red-500">*</span></label>
+                            <select id="inquiry-type" name="inquiry_type" data-fs-field class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-gray-50" required>
+                                <option value="" disabled selected>Select an option...</option>
+                                <option value="rfp_rfq">Request for Proposal (RFP) / Request for Quote (RFQ)</option>
+                                <option value="rfi_market_research">Request for Information (RFI) / Market Research</option>
+                                <option value="teaming_subcontracting">Teaming Agreement / Subcontracting Opportunity</option>
+                                <option value="employment_offer">Employment / Recruitment Offer</option>
+                                <option value="academic_inquiry">Academic / Research Inquiry</option>
+                                <option value="general_networking">General Networking</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-8">
+                            <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Brief Message / Scope of Work <span class="text-red-500">*</span></label>
+                            <p class="text-xs text-gray-500 mb-2">Please do not include any classified information, CUI, or sensitive PII in this unencrypted form.</p>
+                            <textarea id="message" name="message" data-fs-field rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-gray-50 resize-y" placeholder="Describe the requirements, timelines, or purpose of your outreach here..." required></textarea>
+                            <span data-fs-error="message" class="text-red-500 text-xs mt-1 block"></span>
+                        </div>
+
+                        <div data-fs-success class="mb-6 bg-green-50 border border-green-200 text-green-800 rounded-lg p-4 flex items-center hidden">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Transmission Successful</h4>
+                                <p class="text-sm">Your inquiry has been securely routed. I will review and respond to the provided official email address shortly.</p>
+                            </div>
+                        </div>
+                        
+                        <div data-fs-error class="mb-6 bg-red-50 border border-red-200 text-red-800 rounded-lg p-4 flex items-center hidden">
+                            <i class="fas fa-exclamation-circle text-red-500 text-xl mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Transmission Failed</h4>
+                                <p class="text-sm">There was an issue submitting your form. Please verify the highlighted fields and try again.</p>
+                            </div>
+                        </div>
+
+                        <div class="text-right border-t border-gray-200 pt-6">
+                            <button type="submit" data-fs-submit-btn class="bg-navy hover:bg-govblue text-white font-bold py-3.5 px-8 rounded-lg transition-colors shadow-md inline-flex items-center disabled:opacity-50 disabled:cursor-wait">
+                                <i class="fas fa-paper-plane mr-2"></i> Submit Official Inquiry
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t-4 border-primary-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="text-2xl font-bold text-white tracking-tight mb-4 inline-block">meganfrench<span class="text-primary-500">.info</span></a>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        DCAA & FAR Compliant structure. Synthesizing physical manufacturing with administrative logic.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Business Logs</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">What Even is a CAGE Code?</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Press Operation Efficiency</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Decoding SAM.gov</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">FAR for Beginners</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">References</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://www.opm.gov/" target="_blank" class="hover:text-primary-400 transition-colors">OPM Federal Leadership</a></li>
+                        <li><a href="https://training.fema.gov/" target="_blank" class="hover:text-primary-400 transition-colors">FEMA Training</a></li>
+                        <li><a href="https://www.acquisition.gov/browse/index/far" target="_blank" class="hover:text-primary-400 transition-colors">Acquisition.gov (FAR)</a></li>
+                        <li><a href="https://ocw.mit.edu/" target="_blank" class="hover:text-primary-400 transition-colors">MIT OpenCourseware</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Entity Stats & NAICS</h4>
+                    <ul class="space-y-1.5 text-xs font-mono bg-gray-800 p-4 rounded border border-gray-700">
+                        <li>CAGE: <span class="text-white">180J1</span></li>
+                        <li>541611: <span class="text-gray-300">Management Consulting</span></li>
+                        <li>541840: <span class="text-gray-300">Media Representatives</span></li>
+                        <li>541511: <span class="text-gray-300">Custom Programming</span></li>
+                        <li>541512: <span class="text-gray-300">Systems Design</span></li>
+                        <li>541519: <span class="text-gray-300">Other Computer Related</span></li>
+                        <li>518210: <span class="text-gray-300">Data Processing & Hosting</span></li>
+                        <li>541990: <span class="text-gray-300">OSINT & Tech Services</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Megan French. All Rights Reserved Across All Jurisdictions.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+        
+        // Interactive Terminal Logic
+        function initTerminal() {
+            const terminalInput = document.getElementById('terminal-input');
+            const terminalOutput = document.getElementById('terminal-output');
+            const terminalBody = document.getElementById('terminal-body');
+            const terminalDate = document.getElementById('terminal-date');
+
+            if (terminalDate) {
+                terminalDate.textContent = new Date().toLocaleString();
+            }
+
+            const commands = {
+                'help': `Available commands:<br>
+                         <span class="text-yellow-300">about</span>    - Who is Megan French?<br>
+                         <span class="text-yellow-300">status</span>   - Current operational status & entity data<br>
+                         <span class="text-yellow-300">skills</span>   - Core competencies & technologies<br>
+                         <span class="text-yellow-300">contact</span>  - Communication channels<br>
+                         <span class="text-yellow-300">clear</span>    - Clear the terminal screen`,
+                'about': `> Operations & Systems Specialist.<br>
+                          > Bridging physical manufacturing processes with digital systems.<br>
+                          > Business Administration Student (4.0 GPA, Presidential List).<br>
+                          > Maintaining a living log of field notes and industry analysis.`,
+                'status': `<div class="pl-3 border-l-2 border-gray-600 my-2 text-green-300">
+                           <p>NAME: Megan French</p>
+                           <p>ROLE: Press Operator / Web Content Producer</p>
+                           <p>CAGE_CODE: 180J1 [ACTIVE]</p>
+                           <p>EDU: UoPeople (Business Admin)</p>
+                           <p>CERT: FEMA IS-52 (Disaster Logistics)</p>
+                           </div>`,
+                'skills': `> Industrial Operations & Asset Management<br>
+                           > Strategic Logistics & Supply Chain<br>
+                           > Digital Systems & Technical Analysis<br>
+                           > Continuous Improvement & Quality Data Analysis<br>
+                           > UI/UX Transitions & Digital Record Keeping`,
+                'contact': `> Direct Email: business@meganfrench.info<br>
+                            > Location: Southern Ohio, Ross Co. Manufacturing Hub`
+            };
+
+            if (terminalInput) {
+                terminalInput.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter') {
+                        const val = this.value.trim().toLowerCase();
+                        const promptHTML = `<div class="mt-3 mb-1"><span class="text-green-400 mr-2 font-semibold">me@system:~$</span><span class="text-white">${this.value}</span></div>`;
+                        
+                        let responseHTML = '';
+                        if (val === 'clear') {
+                            terminalOutput.innerHTML = '';
+                            this.value = '';
+                            return;
+                        } else if (val === '') {
+                            responseHTML = '';
+                        } else if (commands[val]) {
+                            responseHTML = `<div class="text-gray-300">${commands[val]}</div>`;
+                        } else {
+                            responseHTML = `<div class="text-red-400">Command not found: '${val}'. Type 'help' for a list of available commands.</div>`;
+                        }
+
+                        terminalOutput.innerHTML += promptHTML + responseHTML;
+                        this.value = '';
+                        
+                        setTimeout(() => {
+                            terminalBody.scrollTop = terminalBody.scrollHeight;
+                        }, 10);
+                    }
+                });
+            }
+        }
+
+        window.onload = function() {
+            initTerminal();
+            initCustomDropdown();
+        };
+
+        function initCustomDropdown() {
+            const orgs = [
+                // Federal Agencies
+                "Department of Defense (DoD)", "Defense Logistics Agency (DLA)", "Defense Contract Management Agency (DCMA)",
+                "Department of Homeland Security (DHS)", "Department of Energy (DOE)", "Department of Veterans Affairs (VA)",
+                "General Services Administration (GSA)", "National Aeronautics and Space Administration (NASA)",
+                "Small Business Administration (SBA)", "Department of Transportation (DOT)", "Department of Justice (DOJ)",
+                "Department of State (DOS)", "Department of Health and Human Services (HHS)", "Federal Emergency Management Agency (FEMA)",
+                "Environmental Protection Agency (EPA)", "Federal Aviation Administration (FAA)", "Federal Bureau of Investigation (FBI)",
+                "Internal Revenue Service (IRS)", "National Institutes of Health (NIH)", "National Science Foundation (NSF)",
+                "Defense Advanced Research Projects Agency (DARPA)", "Defense Threat Reduction Agency (DTRA)", "Missile Defense Agency (MDA)",
+                "National Security Agency (NSA)", "Central Intelligence Agency (CIA)", "National Reconnaissance Office (NRO)",
+                "National Geospatial-Intelligence Agency (NGA)",
+                
+                // Major Defense Contractors & Primes
+                "Raytheon (RTX Corporation)", "Lockheed Martin", "General Dynamics", "Boeing", "Northrop Grumman",
+                "L3Harris Technologies", "BAE Systems", "Huntington Ingalls Industries (HII)", "Leidos",
+                "Booz Allen Hamilton", "SAIC", "CACI International", "General Electric (GE Aerospace)", "Honeywell Aerospace",
+                "Oshkosh Defense", "Becton Dickinson", "McKesson", "SpaceX", "Blue Origin", "Chemonics International",
+                "KBR", "Jacobs Solutions", "Textron", "Serco", "Peraton", "ManTech",
+                
+                // DARPA Performers, SBIR Awardees, Tech & LLCs
+                "Palantir Technologies", "Anduril Industries", "Sierra Nevada Corporation", "Shield AI", "Rebellion Defense",
+                "Epirus", "HawkEye 360", "Capella Space", "Iceye", "Skydio", "Ghost Robotics", "Boston Dynamics",
+                "Strategic Analysis, Inc.", "Systems Planning and Analysis, Inc.",
+                "ECS Federal, LLC", "Old Harbor Solutions, LLC", "GenTech Associates, Inc.", "MDW Associates, LLC", 
+                "Summt2Sea Consulting, LLC", "Guidehouse, Inc.", "SecuriGence, LLC", "Twenty8 Technology, LLC", 
+                "Koniag Professional Services, LLC", "System High Corporation", "Advanced Resource Technologies, Inc.",
+                "A&M SIM LLC", "AeroActuate", "American Delivery Drone Company (ADDC)", "Avionics Networks LLC",
+                "Babb McGrew LLC", "BEI Lab", "Catalyze Partners", "Compass Systems, Inc.", "Cone Drive",
+                "Oceanit Laboratories Inc.", "Analog Photonics LLC", "0 Base Design, LLC", "10xBeta LLC",
+                "Kratos Defense & Security Solutions", "AeroVironment", "Hermeus", "Varda Space Industries",
+                
+                "Other (Specify Manually)"
+            ];
+
+            const searchInput = document.getElementById('org-search');
+            const dropdownList = document.getElementById('org-dropdown-list');
+            const hiddenValue = document.getElementById('org-value');
+            const manualContainer = document.getElementById('manual-org-container');
+            const manualInput = document.getElementById('manual-org');
+            const toggleBtn = document.getElementById('org-dropdown-toggle');
+
+            function renderList(items) {
+                dropdownList.innerHTML = '';
+                if (items.length === 0) {
+                    dropdownList.innerHTML = '<div class="p-3 text-sm text-gray-500 italic">No matches found. Select "Other" to type manually.</div>';
+                    const otherItem = document.createElement('div');
+                    otherItem.className = 'p-3 hover:bg-gray-100 cursor-pointer text-sm font-medium text-navy border-t border-gray-100';
+                    otherItem.textContent = "Other (Specify Manually)";
+                    otherItem.onclick = () => selectItem("Other (Specify Manually)");
+                    dropdownList.appendChild(otherItem);
+                    return;
+                }
+
+                items.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'p-3 hover:bg-blue-50 cursor-pointer text-sm text-gray-700 transition-colors border-b border-gray-50 last:border-0';
+                    if (item === "Other (Specify Manually)") {
+                        div.classList.add('font-bold', 'text-navy', 'bg-gray-50');
+                    }
+                    div.textContent = item;
+                    div.onclick = () => selectItem(item);
+                    dropdownList.appendChild(div);
+                });
+            }
+
+            function selectItem(item) {
+                searchInput.value = item;
+                hiddenValue.value = item;
+                dropdownList.classList.add('hidden');
+                
+                if (item === "Other (Specify Manually)") {
+                    manualContainer.classList.remove('hidden');
+                    manualInput.setAttribute('required', 'true');
+                    manualInput.focus();
+                } else {
+                    manualContainer.classList.add('hidden');
+                    manualInput.removeAttribute('required');
+                    manualInput.value = '';
+                }
+            }
+
+            function toggleDropdown() {
+                dropdownList.classList.toggle('hidden');
+                if (!dropdownList.classList.contains('hidden')) {
+                    renderList(orgs);
+                    searchInput.focus();
+                }
+            }
+
+            searchInput.addEventListener('focus', () => {
+                dropdownList.classList.remove('hidden');
+                renderList(orgs);
+            });
+
+            searchInput.addEventListener('input', (e) => {
+                dropdownList.classList.remove('hidden');
+                const term = e.target.value.toLowerCase();
+                const filtered = orgs.filter(org => org.toLowerCase().includes(term));
+                
+                if (!filtered.includes("Other (Specify Manually)")) {
+                    filtered.push("Other (Specify Manually)");
+                }
+                renderList(filtered);
+                
+                hiddenValue.value = ''; 
+                manualContainer.classList.add('hidden');
+                manualInput.removeAttribute('required');
+            });
+
+            toggleBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleDropdown();
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!searchInput.contains(e.target) && !dropdownList.contains(e.target) && !toggleBtn.contains(e.target)) {
+                    dropdownList.classList.add('hidden');
+                    if (searchInput.value && !hiddenValue.value) {
+                        selectItem("Other (Specify Manually)");
+                        manualInput.value = searchInput.value; 
+                    }
+                }
+            });
+        }
+    </script>
+
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contactForm', formId: 'mvkglrng' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
