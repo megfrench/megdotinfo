@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Megan French - Business Administration Student, Press Operator, and Federal Contractor.">
+    <title>About | Megan French</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        navy: '#003366',
+                        govblue: '#005ea2'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .fade-in { animation: fadeIn 0.8s ease-in forwards; }
+        .fade-in-delayed { animation: fadeIn 0.8s ease-in 0.2s forwards; opacity: 0; }
+        .fade-in-delayed-2 { animation: fadeIn 0.8s ease-in 0.4s forwards; opacity: 0; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        
+        /* Custom Grid Patterns */
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50 bg-grid-pattern flex flex-col min-h-screen">
+
+    <nav class="fixed w-full z-50 glass-nav border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-navy tracking-tight">meganfrench<span class="text-primary-600">.info</span></a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="about.html" class="text-primary-600 font-bold border-b-2 border-primary-600 pb-1">About</a>
+                    <a href="capabilities.html" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Capabilities</a>
+                    <a href="field_notes.html" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Field Notes</a>
+                    <a href="resources.html" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Resources</a>
+                    <a href="index.html#contact" class="bg-navy hover:bg-govblue text-white px-5 py-2.5 rounded-lg font-medium transition-colors shadow-sm">Get in Touch</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-navy focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="about.html" class="block px-3 py-2 text-primary-600 font-bold bg-primary-50 rounded-md">About</a>
+                <a href="capabilities.html" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">Capabilities</a>
+                <a href="field_notes.html" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">Field Notes</a>
+                <a href="resources.html" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">Resources</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-navy font-bold hover:bg-gray-50 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 lg:pt-40 lg:pb-24 flex-grow">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12 fade-in">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-navy tracking-tight mb-4">
+                    The <span class="text-primary-600">Architecture</span> of Operations
+                </h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    A non-traditional career path built on analyzing digital logic, mastering physical production, and navigating federal procurement.
+                </p>
+            </div>
+
+            <!-- Bento Box Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-min">
+                
+                <!-- Card 1: The Profile (Spans 2 columns on desktop) -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:col-span-2 flex flex-col sm:flex-row gap-8 items-center sm:items-start fade-in-delayed hover:shadow-md transition-shadow">
+                    <div class="shrink-0 relative">
+                        <!-- Reduced image size constraints here -->
+                        <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-4 border-white shadow-lg z-10 relative">
+                            <img src="mfbiopic.jpg" alt="Megan French" class="w-full h-full object-cover object-center">
+                        </div>
+                        <div class="absolute -bottom-3 -right-3 bg-primary-600 text-white text-[10px] font-bold px-2 py-1 rounded-lg shadow-sm z-20 whitespace-nowrap">
+                            CAGE: 180J1
+                        </div>
+                    </div>
+                    <div class="text-center sm:text-left">
+                        <h2 class="text-2xl font-bold text-navy mb-2">Megan French</h2>
+                        <h3 class="text-primary-600 font-medium mb-4 text-sm tracking-wide uppercase">Operations & Systems Specialist</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                            I am a systems thinker who refuses to be confined to a desk. I believe you cannot optimize a supply chain from a spreadsheet unless you understand the friction of the factory floor. My objective is to bridge the gap between high-level digital strategy and raw, industrial execution to modernize complex logistical projects.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Academia & Focus -->
+                <div class="bg-navy rounded-2xl shadow-sm border border-gray-800 p-8 text-white flex flex-col justify-center fade-in-delayed hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-primary-500 rounded-full blur-3xl opacity-20"></div>
+                    <i class="fas fa-graduation-cap text-3xl text-primary-400 mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">The Academic Core</h2>
+                    <ul class="space-y-3 text-sm text-gray-300 mt-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span><strong>UoPeople:</strong> Business Administration Student</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span><strong>4.0 GPA</strong> (Presidential List)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span><strong>FEMA Certified:</strong> Disaster Logistics (IS-52)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: The Digital Background -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:col-span-1 fade-in-delayed-2 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-50 text-primary-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h2 class="text-xl font-bold text-navy mb-3">01. The Digital Era</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        For over six years, I operated exclusively in the digital realm as a Web Content Producer for a major technology agency. 
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        I managed the production, automation, and monetization strategies for live web platforms. This environment taught me how to scale systems to meet demand, optimize digital assets globally, and design workflows that dictate human action through UI/UX principles. I learned exactly how data moves.
+                    </p>
+                </div>
+
+                <!-- Card 4: The Physical Reality -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:col-span-1 fade-in-delayed-2 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-gray-100 text-gray-700 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h2 class="text-xl font-bold text-navy mb-3">02. The Factory Floor</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Data is only half the equation. To truly grasp the backbone of the American supply chain, I stepped out of the server room and into heavy industry.
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        As a press operator in a regional manufacturing hub, I run high-tonnage injection molding presses. It is an unforgiving environment requiring meticulous quality control, secondary processing, and rigorous downtime tracking. It is hands-on research in physical asset management and mechanical friction. I learned how things actually move.
+                    </p>
+                </div>
+
+                <!-- Card 5: The Federal Synthesis -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:col-span-1 fade-in-delayed-2 hover:shadow-md transition-shadow border-b-4 border-b-primary-600">
+                    <div class="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h2 class="text-xl font-bold text-navy mb-3">03. The Synthesis</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Bridging digital logic with physical manufacturing leads directly to the ultimate logistical puzzle: Federal Procurement.
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        By securing a CAGE code and studying the Federal Acquisition Regulation (FAR), I am synthesizing my two backgrounds. My goal is to leverage tech-based OSINT, LPTA (Lowest Price Technically Acceptable) cost logic, and an intimate understanding of the factory floor to streamline complex federal supply chains.
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center fade-in-delayed-2">
+                <a href="capabilities.html" class="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-sm font-bold rounded-lg text-white bg-primary-600 hover:bg-primary-700 transition-all shadow-sm hover:shadow-md">
+                    Review Core Capabilities <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t-4 border-primary-600 mt-auto no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="text-2xl font-bold text-white tracking-tight mb-4 inline-block">meganfrench<span class="text-primary-500">.info</span></a>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        DCAA & FAR Compliant structure. Synthesizing physical manufacturing with administrative logic.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Site Directory</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-primary-400 transition-colors">About Megan</a></li>
+                        <li><a href="capabilities.html" class="hover:text-primary-400 transition-colors">Core Capabilities</a></li>
+                        <li><a href="field_notes.html" class="hover:text-primary-400 transition-colors">Field Notes</a></li>
+                        <li><a href="resources.html" class="hover:text-primary-400 transition-colors">Resources</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">References</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://www.opm.gov/" target="_blank" class="hover:text-primary-400 transition-colors">OPM Federal Leadership</a></li>
+                        <li><a href="https://training.fema.gov/" target="_blank" class="hover:text-primary-400 transition-colors">FEMA Training</a></li>
+                        <li><a href="https://www.acquisition.gov/browse/index/far" target="_blank" class="hover:text-primary-400 transition-colors">Acquisition.gov (FAR)</a></li>
+                        <li><a href="https://ocw.mit.edu/" target="_blank" class="hover:text-primary-400 transition-colors">MIT OpenCourseware</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Entity Stats & NAICS</h4>
+                    <ul class="space-y-1.5 text-xs font-mono bg-gray-800 p-4 rounded border border-gray-700">
+                        <li>CAGE: <span class="text-white">180J1</span></li>
+                        <li>541511: <span class="text-gray-300">Custom Computer Programming</span></li>
+                        <li>541512: <span class="text-gray-300">Computer Systems Design</span></li>
+                        <li>541519: <span class="text-gray-300">Other Computer Related</span></li>
+                        <li>518210: <span class="text-gray-300">Data Processing & Hosting</span></li>
+                        <li>541990: <span class="text-gray-300">All Other Tech (OSINT)</span></li>
+                        <li>541611: <span class="text-gray-300">Administrative Management</span></li>
+                        <li>541840: <span class="text-gray-300">Media Representatives</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Megan French. All Rights Reserved Across All Jurisdictions.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
